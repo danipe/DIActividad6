@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yo.diactividad6.Preferencias"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wi-fi"
+        android:textSize="20dp"/>
+    <Switch
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/silencioso"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:text="Modo Silencioso"
+        android:textSize="20dp"
+        android:onClick="selecSilencioso"/>
+    <TextView
+        android:id="@+id/textSilencioso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Un texto que se ha inventado Tomás"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/botonTono"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Tono"
+        android:clickable="true"
+        />
+    <TextView
+        android:id="@+id/tonoSeleccionado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Opciones Avanzadas"
+        android:clickable="true"
+        android:onClick="preferenciasAvanzadas"
+        />
+</LinearLayout>
